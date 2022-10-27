@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Force Order Cancel Status Module
+ *
+ * @author  Peter McWilliams <pmcwilliams@augustash.com>
+ * @license MIT
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="order_force_canceled">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">order_force_canceled</item>
+                        <item name="label" xsi:type="string" translate="true">Force Cancel</item>
+                        <item name="url" xsi:type="url" path="sales/order/forceCancel"/>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">Force Cancel Order(s)</item>
+                            <item name="message" xsi:type="string" translate="true">Are you sure you want to force cancel the selected orders?</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>

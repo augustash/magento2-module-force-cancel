@@ -1,0 +1,25 @@
+{
+    "name": "augustash/module-force-cancel",
+    "description": "Magento 2 Force Cancel Orders",
+    "license": [
+        "MIT"
+    ],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-sales": "*",
+        "magento/module-ui": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Augustash\\ForceCancel\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
